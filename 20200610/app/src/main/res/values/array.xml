@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Area">
+        <item>서울</item>
+        <item>경기</item>
+        <item>충북</item>
+    </string-array>
+    <string-array name="Univ">
+        <item>충북대학교</item>
+        <item>충남대학교</item>
+    </string-array>
+    <string-array name="Course">
+        <item>컴퓨터공학과</item>
+        <item>전기공학과</item>
+    </string-array>
+</resources>
+
+
+
+
+
