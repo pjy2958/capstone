@@ -1,55 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#20B2AA"
+    android:background="@drawable/uni_start"
     tools:context=".StartActivity">
 
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="244dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="81dp"
-        android:layout_marginBottom="45dp"
-        app:layout_constraintBottom_toTopOf="@+id/StartButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/unistart" />
-
-    <Button
+    <ImageButton
         android:id="@+id/StartButton"
-        android:layout_width="126dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="31dp"
-        android:text="시작하기"
-        app:layout_constraintBottom_toTopOf="@+id/LoginButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:src="@drawable/start_button"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="45dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"/>
 
-    <Button
+    <ImageButton
         android:id="@+id/LoginButton"
-        android:layout_width="126dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="30dp"
-        android:text="로그인"
-        app:layout_constraintBottom_toTopOf="@+id/DoButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/StartButton" />
+        android:src="@drawable/login_button"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="45dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"/>
 
-    <Button
+    <ImageButton
         android:id="@+id/DoButton"
-        android:layout_width="126dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="97dp"
-        android:text="도움말"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LoginButton" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:src="@drawable/help_button"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="45dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"/>
+</RelativeLayout>

@@ -16,5 +16,6 @@ public class splashActivity extends Activity {
         }
         startActivity(new Intent(this,StartActivity.class));
         finish();
+        overridePendingTransition(R.anim.not_move_activity,R.anim.rightout_activity);
     }
 }

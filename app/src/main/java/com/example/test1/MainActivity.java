@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
                     case R.id.home:
-                        setFrag(0);
-                        break;
+                    setFrag(0);
+                    break;
 
                     case R.id.search:
                         setFrag(1);
