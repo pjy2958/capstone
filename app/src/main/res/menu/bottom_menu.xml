@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/uni_bottom_home"
+        android:title="home" />
+
+    <item
+        android:id="@+id/search"
+        android:enabled="true"
+        android:icon="@drawable/uni_bottom_search"
+        android:title="search"/>
+
+    <item
+        android:id="@+id/room"
+        android:enabled="true"
+        android:icon="@drawable/uni_bottom_new_room"
+        android:title="NewRoom"/>
+
+
+    <item
+        android:id="@+id/friend"
+        android:enabled="true"
+        android:icon="@drawable/uni_bottom_firend"
+        android:title="friend"/>
+
+
+    <item
+        android:id="@+id/my"
+        android:enabled="true"
+        android:icon="@drawable/uni_bottom_mypage"
+        android:title="MyPage"/>
+
+</menu>

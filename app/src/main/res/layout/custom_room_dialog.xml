@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_room_corner"
+    android:weightSum="13"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/custom_textview_edge"
+        android:gravity="center"
+        android:text="방 생성"
+        android:textColor="#E17D47"
+        android:textSize="8sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:autoSizeTextType="uniform"
+        android:background="#F3E7E0"
+        android:gravity="left"
+        android:text="방 제목은 최대 10글자 입니다."
+        android:textColor="#E17D47" />
+
+
+
+    <EditText
+        android:id="@+id/edit_roomname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:hint="방 제목을 입력하세요."
+        android:maxLength="10"
+        android:inputType="text"
+        android:textColor="#E17D47"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+
+        android:privateImeOptions="defaultInputmode=korean"
+        android:background="#F3E7E0"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:autoSizeTextType="uniform"
+        android:background="#E8CDBE"
+        android:gravity="center"
+        android:text="인원 선택"
+        android:textColor="#D5662B" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="#F3E7E0"
+        android:divider="#EF8349"
+        android:dividerHeight="2dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.1"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+        <ImageButton
+            android:id="@+id/makeroom"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:src="@drawable/bang"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            />
+        <ImageButton
+            android:id="@+id/exit"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/uni_not"
+            />
+    </LinearLayout>
+</LinearLayout>

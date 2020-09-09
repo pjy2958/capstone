@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/uni_background">
+    <TextView
+        android:id="@+id/dsp_room_name"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:text="방 제목"
+        android:textColor="#E17D47"
+        android:textSize="25dp" />
+    <EditText
+        android:id="@+id/result_room_name"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="58dp"
+        android:hint="방 제목을 입력해주세요"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/dsp_room_name"
+        android:layout_marginLeft="30dp"/>
+
+
+
+
+    <TextView
+        android:id="@+id/dsp_univ"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:text="대학교"
+        android:textColor="#E17D47"
+        android:textSize="25dp" />
+    <Spinner
+        android:id="@+id/result_univ"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/dsp_univ"
+        android:layout_marginTop="117dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:entries="@array/Univ"
+        android:layout_marginLeft="30dp"/>
+
+
+
+
+    <TextView
+        android:id="@+id/dsp_course"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="168dp"
+        android:text="학과"
+        android:textColor="#E17D47"
+        android:textSize="25dp" />
+    <Spinner
+        android:id="@+id/result_course"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="166dp"
+        android:layout_toRightOf="@+id/dsp_course"
+        android:entries="@array/Course"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"/>
+
+
+
+
+    <ImageButton
+        android:id="@+id/gum_saek"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/result_course"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="250dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/search" />
+</RelativeLayout>

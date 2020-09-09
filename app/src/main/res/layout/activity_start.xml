@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/uni_start"
+    tools:context=".StartActivity">
+
+    <ImageButton
+        android:id="@+id/StartButton"
+        android:src="@drawable/start_button"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="45dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"/>
+
+    <ImageButton
+        android:id="@+id/LoginButton"
+        android:src="@drawable/login_button"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="45dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"/>
+
+    <ImageButton
+        android:id="@+id/DoButton"
+        android:src="@drawable/help_button"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginLeft="45dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"/>
+</RelativeLayout>
